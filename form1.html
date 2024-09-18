@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information</title>
+  <style>
+    div{
+      padding: 10px;
+      background-color: antiquewhite;
+    }
+    input{
+      width: 300px;
+      height: 25px;
+      border-radius: 3px;
+    }
+    .gdr{
+      width: min-content;
+    }
+    label, input, textarea{
+      margin: 10px;
+    }
+    textarea{
+      height: 50px;
+      width: 300px;
+      border-radius: 3px;
+    }
+    .sub{
+      width: min-content;
+      height: min-content;
+      border-radius: 5px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <form action="">
+    <fieldset>
+      <legend>User Personal Information</legend>
+      <label for="fname">Enter your full name</label><br>
+      <input type="text" name="fullname" id="fname"><br>
+      <label for="mail">Enter your email</label><br>
+      <input type="email" name="email" id="mail"><br>
+      <label for="pass">Enter your password</label><br>
+      <input type="password" name="password" id="pass"><br>
+      <label for="pd">Confirm your password</label><br>
+      <input type="password" name="confirmpassword" id="pd"><br>
+      <label for="gender">Enter your gender</label><br>
+      <input class="gdr" type="radio" name="male" id="gen">
+      <label for="male">Male</label>
+      <input class="gdr" type="radio" name="female" id="gen">
+      <label for="female">Female</label>
+      <input class="gdr" type="radio" name="others" id="others">
+      <label for="others">Others</label> <br>
+      <label for="dob">Enter your Date of Birth</label> <br>
+      <input type="date" name="dob" id="dob"><br>
+      <label for="address">Enter your Address:</label><br>
+      <textarea name="address" id="address" rows="5" cols="20"></textarea><br>
+      <input class="sub" type="submit" name="submit" id="submit">
+    </fieldset>
+  </form>
+  </div>
+  
+</body>
+</html>
